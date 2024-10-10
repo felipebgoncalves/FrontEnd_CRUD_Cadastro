@@ -1,8 +1,12 @@
 import streamlit as st
 import requests
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
-url = 'https://backend-crud-cadastro.onrender.com/products/'
+load_dotenv()
+
+url = os.getenv('URL_API')
 
 st.set_page_config(layout="wide")
 
